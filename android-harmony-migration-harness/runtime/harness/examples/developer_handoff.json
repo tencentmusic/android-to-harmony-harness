@@ -1,0 +1,44 @@
+{
+  "format": "developer-handoff/1",
+  "project": {"root": "harmony", "path": "."},
+  "title": "演示编辑器 · 开发交接",
+  "overview": {
+    "summary": "离线示例：编辑器及图片来源弹窗已按模拟合同实现，用于验证交接文档生成流程。",
+    "delivered": ["编辑器主入口", "图片来源弹窗与取消返回", "礼物数量契约检查"]
+  },
+  "pending": [
+    {"item": "真实工程与设备验证", "impact": "模拟结果不能用于业务发布", "next_step": "替换为真实来源及适配器后开展业务验收", "owner": "接手开发与测试"}
+  ],
+  "requirements": {
+    "summary": "对照独立参考实现校验编辑器及弹窗行为。",
+    "in_scope": ["编辑器入口", "图片来源选择与取消", "礼物数量"],
+    "out_of_scope": ["真实相册、上传与线上发布"]
+  },
+  "technical": {
+    "summary": "使用 Python 模拟业务行为，独立适配器读取结果并校验断言。",
+    "decisions": ["参考数据与目标实现分别保留", "功能与视觉断言分别记录结果"]
+  },
+  "ui": {"applicable": false, "reason": "这是离线协议示例，没有真实页面实现；业务 UI 交接需提供选定设计稿和实现效果。"},
+  "code": {
+    "summary": "演示代码位于鸿蒙来源根目录；不对应业务仓库的真实提交。",
+    "repository": "离线示例目录",
+    "branch": "不适用（离线示例）",
+    "revision": "不适用（离线示例）",
+    "target_branch": "不适用（离线示例）",
+    "entries": [{"path": "dynamics.py", "purpose": "编辑器模拟实现与礼物数量"}]
+  },
+  "verification": {
+    "summary": "具体合同结果由生成器读取当前运行，未通过项自动列在前置待办区。",
+    "steps": ["执行仓库中的离线 demo", "核对弹窗和编辑器的功能、视觉结果", "模拟记录不能作为真人业务验收结论"]
+  },
+  "integration": {
+    "summary": "本示例不接入业务发布。",
+    "steps": ["业务接手时填写真实仓库、分支、提交和目标分支", "补充环境、配置及兼容要求后按项目规范合入"]
+  },
+  "topics": [
+    {"title": "接口与配置", "summary": "示例没有外部服务依赖。", "items": ["业务使用时补充新增接口、开关和默认值"]},
+    {"title": "数据与兼容", "summary": "示例没有持久化升级。", "items": []},
+    {"title": "问题定位", "summary": "先按未通过行为定位对应适配器。", "items": ["详细命令日志和机器证据保留在运行归档"]}
+  ],
+  "knowledge": {"status": "not_applicable", "summary": "离线合成示例未产生可回灌的业务知识。", "evidence": []}
+}

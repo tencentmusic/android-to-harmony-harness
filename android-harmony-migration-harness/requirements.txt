@@ -1,0 +1,12 @@
+# Versions verified with the Harness on macOS / Python 3.9.
+# Complete direct + transitive lock for Python 3.9–3.12.
+Pillow==10.4.0
+numpy==1.26.4
+scikit-image==0.24.0
+scipy==1.13.1
+networkx==3.2.1
+imageio==2.37.2
+tifffile==2024.8.30
+packaging==26.0
+lazy-loader==0.4
+json5==0.9.28

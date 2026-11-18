@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "id": "demo-project",
+      "profile": "profiles/interactive-demo.md",
+      "target_roots": ["/absolute/path/to/harmony-project"],
+      "source_roots": ["/absolute/path/to/android-project"],
+      "build_cwd": "/absolute/path/to/harmony-project",
+      "analysis_output_dir": "/absolute/path/to/migration-output",
+      "knowledge_root": "/absolute/path/to/knowledge-base"
+    }
+  ]
+}

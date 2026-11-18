@@ -1,0 +1,2 @@
+# Release integrity is byte-based; preserve files even with core.autocrlf=true.
+* -text

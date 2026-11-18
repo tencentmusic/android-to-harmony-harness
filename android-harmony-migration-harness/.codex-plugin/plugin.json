@@ -1,0 +1,18 @@
+{
+  "name": "android-harmony-migration-harness",
+  "version": "1.8.0",
+  "description": "Complete Android to Harmony migration toolkit with bundled skills, portable profiles and evidence-based recovery.",
+  "author": {
+    "name": "Migration Harness"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Migration Harness",
+    "shortDescription": "可恢复的 Android → Harmony 迁移与验收",
+    "longDescription": "统一迁移工作流、联合评审与逐点验收、通用 Agent 运行器、UI 资源和项目配置。",
+    "developerName": "Migration Harness",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "使用 Migration Harness 完成 Android 到 Harmony 的迁移。"
+  }
+}

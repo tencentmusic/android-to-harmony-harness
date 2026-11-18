@@ -1,0 +1,5 @@
+{
+  "gift_quantities": [1, 10, 100],
+  "page_ids": ["a", "b", "c"],
+  "source": "Synthetic example contract, not an Android application"
+}
